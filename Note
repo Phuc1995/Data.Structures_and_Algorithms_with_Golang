@@ -1,0 +1,29 @@
+Lists:
+    - A list is a collection of ordered elements that are used to store list of items. Unlike array lists, these can expand and shrink dynamically
+
+LinkedList:
+    - LinkedList is a sequence of nodes that have properties and a reference to the next node in the sequence. It is a linear data structure that is used to store
+     data. The data structure permits the addition and deletion of components
+     from any node next to another node. They are not stored contiguously in
+     memory, which makes them different arrays.
+    - Losing the head node in the singly linked list means losing access to your linkedlist. When I say “never lose the address of head node”, it means you have to be careful while storing it in global variables and prevent replacing it or watch out for variable scopes in local variables.
+    -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
