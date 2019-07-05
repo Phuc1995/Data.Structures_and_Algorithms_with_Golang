@@ -38,6 +38,34 @@ func (p *playlist) addSong(name, author string) error {
 	return nil
 }
 
+func (p *playlist) showAllSong()  {
+	currentNode := p.head
+	if currentNode == nil{
+		fmt.Println("empty list")
+	}
+
+	for currentNode.next != nil  {
+		currentNode = currentNode.next
+		fmt.Println(currentNode.name)
+	}
+}
+
+func (p *playlist) startPlaying() *song {
+	p.nowPlaying = p.head
+	return p.nowPlaying
+}
+
+
+func (p *playlist) nextSong() *song  {
+	p.nowPlaying = p.nowPlaying.next
+	return p.nowPlaying
+}
+
+func (p *playlist) previousSong() *song  {
+	p.nowPlaying = p.nowPlaying.previous
+	return p.nowPlaying
+}
+
 func main()  {
 	playlistName := "myplaylist"
 	myPlaylist := createPlaylist(playlistName)
@@ -50,4 +78,27 @@ func main()  {
 	myPlaylist.addSong("Stubborn Love", "The Lumineers")
 	myPlaylist.addSong("Feels", "Calvin Harris")
 	fmt.Println("Showing all songs in playlist...")
+	myPlaylist.showAllSong()
+
+	myPlaylist.startPlaying()
+	fmt.Printf("Now playing: %s by %s\n", myPlaylist.nowPlaying.name, myPlaylist.nowPlaying.artist)
+	fmt.Println()
+
+	myPlaylist.nextSong()
+	fmt.Println("Changing next song...")
+	fmt.Printf("Now playing: %s by %s\n", myPlaylist.nowPlaying.name, myPlaylist.nowPlaying.artist)
+	fmt.Println()
+	myPlaylist.nextSong()
+	fmt.Println("Changing next song...")
+	fmt.Printf("Now playing: %s by %s\n", myPlaylist.nowPlaying.name, myPlaylist.nowPlaying.artist)
+	fmt.Println()
+
+	myPlaylist.previousSong()
+	fmt.Println("Changing previous song...")
+	fmt.Printf("Now playing: %s by %s\n", myPlaylist.nowPlaying.name, myPlaylist.nowPlaying.artist)
+	fmt.Println()
+	myPlaylist.previousSong()
+	fmt.Println("Changing previous song...")
+	fmt.Printf("Now playing: %s by %s\n", myPlaylist.nowPlaying.name, myPlaylist.nowPlaying.artist)
+
 }
