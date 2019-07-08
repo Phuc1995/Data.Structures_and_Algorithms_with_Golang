@@ -24,17 +24,12 @@ Queues:
 	+ Adaptability
 	+ Method of sorting
 
-bubble(noi bot): The bubble sort algorithm is a sorting algorithm that compares a pair of
-neighboring elements and swaps them if they are in the wrong order. The
-algorithm has a complexity of O(n ), where n is the number of elements to
-be sorted. The smallest or greatest value bubbles up to the top of the
-collection, or the smallest or greatest sinks to the bottom (depending on
-whether you're sorting into ascending or descending order).
+bubble(noi bot): The bubble sort algorithm is a sorting algorithm that compares a pair of neighboring elements and swaps them if they are in the wrong order. The algorithm has a complexity of O(n ), where n is the number of elements to be sorted. The smallest or greatest value bubbles up to the top of the collection, or the smallest or greatest sinks to the bottom (depending on whether you're sorting into ascending or descending order).
 
-
-Sắp xếp nổi bọt là một giải thuật sắp xếp đơn giản. Giải thuật sắp xếp này được tiến hành dựa trên việc so sánh cặp phần tử liền kề nhau và tráo đổi thứ tự nếu chúng không theo thứ tự.
++ Sắp xếp nổi bọt là một giải thuật sắp xếp đơn giản. Giải thuật sắp xếp này được tiến hành dựa trên việc so sánh cặp phần tử liền kề nhau và tráo đổi thứ tự nếu chúng không theo thứ tự.
 Giải thuật này không thích hợp sử dụng với các tập dữ liệu lớn khi mà độ phức tạp trường hợp xấu nhất và trường hợp trung bình là Ο(n2) với n là số phần tử.
 Giải thuật sắp xếp nổi bọt là giải thuật chậm nhất trong số các giải thuật sắp xếp cơ bản. Giải thuật này còn chậm hơn giải thuật đổi chỗ trực tiếp mặc dù số lần so sánh bằng nhau, nhưng do đổi chỗ hai phần tử kề nhau nên số lần đổi chỗ nhiều hơn
+
 
 
 
