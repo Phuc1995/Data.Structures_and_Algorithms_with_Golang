@@ -1,0 +1,39 @@
+https://viblo.asia/p/19-bi-kip-ban-co-the-dung-khi-pham-sai-lam-voi-git-dWrvwdmPRw38
+git reset HEAD <file>...
+
+Rebase: is syn with Master 
+
+# Sau lệnh này ta có thể thay đổi nội dung commit message một cách tuỳ ý
+git commit --amend
+
+# 1. Chỉ đưa HEAD về như cũ
+$ git reset --soft HEAD~
+
+# 2. Đưa HEAD và index về như cũ
+$ git reset HEAD~
+
+# 3. Đưa cả index, working tree về 1 commit trước đó
+$ git reset --hard HEAD~
+
+# Đưa HEAD, index của master về 1 commit trước đó
+$ git reset --hard HEAD~
+
+# Tạm thời lưu lại các phần công việc còn đang làm dở
+$ git stash -u
+
+Khi lỡ tay xoá mất một commit cực kì cực kì quan trọng
+# Đầu tiên là xem lại toàn bộ lịch sử commit
+$ git reflog
+
+# Từ đó chọn commit muốn phục hồi và khôi phục lại
+# ví dụ）git reset --hard HEAD@{2}
+$ git reset --hard <commit>
+
+Khi có conflict trong quá trình rebase
+# Sau khi hoàn thành, ta add rồi tiến hành rebase
+$ git add <tên file>
+
+# Thay đổi commit
+$ git commit --amend
+
+$ git rebase --continue
