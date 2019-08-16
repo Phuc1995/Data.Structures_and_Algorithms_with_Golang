@@ -3,6 +3,12 @@ git reset HEAD <file>...
 
 Rebase: is syn with Master 
 
+#merge code to master
+ git merge <name branch need merge>
+
+#Delete branch
+ git branch -d issue1
+ 
 # Sau lệnh này ta có thể thay đổi nội dung commit message một cách tuỳ ý
 git commit --amend
 
