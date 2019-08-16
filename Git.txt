@@ -42,4 +42,7 @@ $ git add <tên file>
 # Thay đổi commit
 $ git commit --amend
 
-$ git rebase --continue
+#Merge bằng rebase
+git rebase --continue : tiep tuc sua chua conflict
+git rebase --abort : xoa bo rebase
+
